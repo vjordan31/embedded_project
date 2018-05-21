@@ -118,6 +118,7 @@ Void systemFilBufferPlaybackLED_PRD(Void) {
  */
 void audioHWI(void) {
 
+
 	s16 = read_audio_sample();
 	if (MCASP->RSLOT) { // left channel only
 		s16 &= dip_mask;
